@@ -1,14 +1,23 @@
+# Introduction
 This repository contains assignments and project work completed as part of the Programming for Data Analytics module. It showcases practical applications of Python, data processing techniques, and analytical workflows commonly used in real-world data science environments.
-Skills Demonstrated
 
-1 Python programming (pandas, numpy, matplotlib, seaborn)
+# Skills Demonstrated
 
-2 Data cleaning & transformation
+- Python programming (pandas, numpy, matplotlib, seaborn)
 
-3 Grouping, filtering, and aggregating data
+- Data cleaning & transformation
 
-4 Visualisation of data trends
+- Grouping, filtering, and aggregating data
 
-5 Applying best practices for reproducible analytics
+- Visualisation of data trends
 
-6 Working with real datasets and converting them into insights
+- Applying best practices for reproducible analytics
+
+- Working with real datasets and converting them into insights
+
+# Assignment
+
+
+# Conclusion
+
+This repo demonstrates the practical programming skills acquired during the Programming for Data Analytics module. It highlights your ability to work with real data, build analytic workflows, and produce clear, replicable results.
