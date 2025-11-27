@@ -18,7 +18,7 @@ A Python program that retrieves and prints the dates of all official bank holida
 - Working with dates and times in Python
 - Accessing structured data
 - Formatting and displaying date information
-- 
+  
 #### 2. Assignment 3
 
 Analysis of email addresses to extract domains and visualise their distribution. Includes:
@@ -45,6 +45,8 @@ Exploratory analysis of daily weather conditions at Ireland West Airport, Knock.
 - Plotting the temperature data, calculating the daily mean temperature, and producing the monthly mean temperature to observe seasonal trends.
 - Examines wind speed behaviour by creating a plot of the raw wind speed values
 - Identifying the maximum wind speed for each day, and generating a monthly mean of these daily maximum values
+
+## Project
 
 # Conclusion
 
