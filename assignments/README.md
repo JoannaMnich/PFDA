@@ -46,8 +46,6 @@ Exploratory analysis of daily weather conditions at Ireland West Airport, Knock.
 - Examines wind speed behaviour by creating a plot of the raw wind speed values
 - Identifying the maximum wind speed for each day, and generating a monthly mean of these daily maximum values
 
-## Project
-
 # Conclusion
 
-This repo demonstrates the practical programming skills acquired during the Programming for Data Analytics module. It highlights your ability to work with real data, build analytic workflows, and produce clear, replicable results.
+This repo demonstrates the practical programming skills acquired during the Programming for Data Analytics module. It highlights my ability to work with real data, build analytic workflows, and produce clear, replicable results.
