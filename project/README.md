@@ -31,3 +31,9 @@ Central (inland): Mullingar, Claremorris
 ## Cleaning
 
 Some stations have missing data for certain months or years. Missing months are either removed or represented as NaN to maintain consistent time indices across all stations.
+
+
+Although some station files are clean enough to be parsed directly, others contain inconsistent formatting.
+Therefore, numeric type normalization was applied uniformly across all datasets.
+Column names were normalised to lowercase and stripped of whitespace before type conversion to ensure consistency across stations
+Due to non-standard metadata headers in Met Éireann station files, column names were explicitly defined during import to ensure consistent parsing across stations.
