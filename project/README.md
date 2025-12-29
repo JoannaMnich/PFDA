@@ -1,9 +1,4 @@
-
-
-
-
-
-## Project
+# Project
 Historical weather data were obtained from the Met Éireann website.
 As the data are provided separately for individual stations, an automated data collection process was implemented using Python to download, clean, and merge multiple datasets into a single unified dataset suitable for analysis.
 The analysis focuses on the period from 2005 onwards, as this is the earliest year for which consistent and complete monthly wind data are available across the selected meteorological stations. This ensures data comparability and reduces the impact of missing values.
@@ -43,4 +38,24 @@ Due to non-standard metadata headers in Met Éireann station files, column names
 This script provides a reusable data-cleaning pipeline for multiple Irish weather stations.
 It avoids code duplication by using a single function that can be applied to all stations.
 
-The cleaning pipeline automatically detects the row containing the column headers (year, month, wdsp), loads the CSV data while skipping metadata rows, normalizes column names, converts relevant columns to numeric values, filters data to the period 2005–2025, removes rows with missing wind speed values, keeps only the relevant columns, saves a cleaned CSV file for each station
+The cleaning pipeline automatically detects the row containing the column headers (year, month, wdsp), loads the CSV data while skipping metadata rows, normalizes column names, converts relevant columns to numeric values, filters data to the period 2005–2025, removes rows with missing wind speed values, keeps only the relevant columns, saves a cleaned CSV file for each station.
+
+## Understanding  Data
+
+A cleaned dataset has: year,month,wdsp,station
+
+wdsp = mean wind speed for that month 
+
+station = location
+
+### For wind power estimation, we need to consider:
+
+Mean wind speed → baseline power potential.
+
+Operational range of wind turbines → usually turbines only operate between a cut-in and cut-out speed.
+
+Variability → min, max, or standard deviation of wind speeds.
+
+## Analysing data
+To analyse mean wind speed, I create a master DataFrame by merging all processed station files and adding a station column. This will give one tidy dataset for analysis.
+
