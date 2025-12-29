@@ -37,3 +37,10 @@ Although some station files are clean enough to be parsed directly, others conta
 Therefore, numeric type normalization was applied uniformly across all datasets.
 Column names were normalised to lowercase and stripped of whitespace before type conversion to ensure consistency across stations
 Due to non-standard metadata headers in Met Éireann station files, column names were explicitly defined during import to ensure consistent parsing across stations.
+
+## Data Cleaning Pipeline for Weather Station CSV Files
+
+This script provides a reusable data-cleaning pipeline for multiple Irish weather stations.
+It avoids code duplication by using a single function that can be applied to all stations.
+
+The cleaning pipeline automatically detects the row containing the column headers (year, month, wdsp), loads the CSV data while skipping metadata rows, normalizes column names, converts relevant columns to numeric values, filters data to the period 2005–2025, removes rows with missing wind speed values, keeps only the relevant columns, saves a cleaned CSV file for each station
