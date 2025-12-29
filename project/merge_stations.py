@@ -29,7 +29,7 @@ def merge_stations():
     output_path = os.path.join(processed_folder, "all_stations_cleaned.csv")
     master_df.to_csv(output_path, index=False)
 
-    print("\n✅ Merged CSV created")
+    print("\n Merged CSV created")
     print("Shape:", master_df.shape)
     print(master_df["station"].value_counts())
 
