@@ -9,13 +9,13 @@ Selected meteorological stations by region
 
 North: Malin Head
 
-South: Roches Point, SherkinIsland, Valentia Observatory
+South: Roches Point, SherkinIsland, 
 
-East: Dublin Airport, Phoenix Park, Casement Aerodrome
+East: Dublin Airport, Casement Aerodrome
 
-West: Belmullet
+West: Belmullet, Valentia Observatory
 
-Central (inland): Mullingar, Claremorris
+Central (inland): Mullingar, Claremorris, Mt Dillon
 
 ## Project structure
 
