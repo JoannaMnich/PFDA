@@ -68,18 +68,21 @@ The monthly wind speed values represent the mean of all observations for a given
 ### Trend Analysis for a wind speeds in the next 10 years
 The plots show the mean annual wind speed for each station over 20 years. Flat lines indicate stable wind conditions, suggesting similar wind speeds can be expected in the next 10 years. Small fluctuations are natural variability and do not indicate long-term changes.
 #### Interpretation of Results:
-Flat lines in the annual wind speed plots indicate stable wind conditions.
-The lack of a clear trend suggests that future wind conditions are likely to remain similar over the next 10 years.
-Small fluctuations between years reflect natural variability, not long-term climate change.
+The mean annual wind speed for each station from 2005–2025 shows stable conditions with slopes near zero. This indicates no significant trend, suggesting that wind patterns are consistent and can be expected to remain similar over the next 10 years. Small year-to-year variations reflect natural seasonal variability, not long-term changes.
 
 ### Monthly Seasonal Wind Pattern and Variability per Station
 
 This block calculates the average wind speed per month for each station over the 20-year period.
 It also computes the standard deviation per month to show the variability of wind speeds.
 The results can help identify seasonal patterns and assess the stability of wind resources, which is important for wind energy planning.
-Conclusions:
 If the standard deviation is small and the annual trend is stable → future years will likely be similar
 If the standard deviation is large or the trend is variable → risk must be considered in wind energy planning
+
+# Other Weather Metrics Worth Analyzing
+
+While this project focuses on wind speed for evaluating wind energy potential, it is also valuable to consider other weather variables that could influence wind patterns and, consequently, wind power production. Metrics such as temperature, rainfall, or atmospheric pressure may have correlations with wind speed.
+
+Analyzing these relationships can help identify conditions under which wind speed is higher or lower, and improve predictions of energy output for wind farms. For example, computing correlations between wind speed and temperature or precipitation could reveal seasonal or meteorological patterns that affect turbine performance. Understanding these interactions allows for more accurate forecasting and planning for wind energy generation.
 
 # Conclusion 
 
