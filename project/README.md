@@ -59,3 +59,32 @@ Variability → min, max, or standard deviation of wind speeds.
 ## Analysing data
 To analyse mean wind speed, I create a master DataFrame by merging all processed station files and adding a station column. This will give one tidy dataset for analysis.
 
+### Analyse mean wind speed from merged station script
+This table shows the average wind speed at each station over the 20-year period. Higher values indicate stronger potential for wind energy. Wind farms typically operate best within a specific wind range, so both mean and range (min/max) are important for assessing usable power.
+
+This table shows the mean, minimum, and maximum wind speeds at each station. Wind farms have operational limits; therefore knowing the extremes helps estimate how often turbines will operate at full capacity.
+### Monthly average wind speed plot for each station
+The monthly wind speed values represent the mean of all observations for a given month across approximately 20 years, providing a long-term seasonal wind pattern for each station.
+### Trend Analysis for a wind speeds in the next 10 years
+The plots show the mean annual wind speed for each station over 20 years. Flat lines indicate stable wind conditions, suggesting similar wind speeds can be expected in the next 10 years. Small fluctuations are natural variability and do not indicate long-term changes.
+#### Interpretation of Results:
+Flat lines in the annual wind speed plots indicate stable wind conditions.
+The lack of a clear trend suggests that future wind conditions are likely to remain similar over the next 10 years.
+Small fluctuations between years reflect natural variability, not long-term climate change.
+
+### Monthly Seasonal Wind Pattern and Variability per Station
+
+This block calculates the average wind speed per month for each station over the 20-year period.
+It also computes the standard deviation per month to show the variability of wind speeds.
+The results can help identify seasonal patterns and assess the stability of wind resources, which is important for wind energy planning.
+Conclusions:
+If the standard deviation is small and the annual trend is stable → future years will likely be similar
+If the standard deviation is large or the trend is variable → risk must be considered in wind energy planning
+
+# Conclusion 
+
+The results show that wind conditions are consistent and reliable across the analysed stations. Wind energy potential depends mainly on repeating seasonal patterns, not on individual years.
+
+Similar wind speeds observed in the same months over a 20-year period indicate a stable wind resource. Low variability suggests low risk for long-term wind energy production, making these locations suitable for wind farm development.
+North station such as  Malin Head exhibit higher mean wind speeds compared to inland locations, reflecting Ireland’s maritime climate. The lower mean wind speed is in Mullingar.
+Wind speeds peak during winter months (December–February) and are lowest during summer, consistent with increased Atlantic storm activity in winter.
