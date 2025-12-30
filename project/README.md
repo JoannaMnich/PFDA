@@ -80,6 +80,12 @@ A 7-day wind speed forecast was estimated for four representative stations in Ir
 
 Wind speed and estimated power output are plotted on separate axes due to their different scales. While wind speed varies moderately over the week, the estimated power output shows larger fluctuations due to its cubic dependence on wind speed.
 
+# Future work
+What anything else I can think of?
+
+Consider forecasting future wind speeds using time series models, which could help predict wind trends for the next year or season.
+Develop a script to automate report generation for new data, making it easier to update analyses without manual work.
+
 # Conclusion 
 
 The results show that wind conditions are consistent and reliable across the analysed stations. Wind energy potential depends mainly on repeating seasonal patterns, not on individual years.
