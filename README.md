@@ -6,7 +6,7 @@ This repository contains assignments and project work completed as part of the P
 - **[Assignments](assignments/README.md)**  
   Scripts and notebooks for assignments, e.g., bank holidays, pie charts, population, and weather analysis.
 
-- **[Project](my-work/project/README.md)**  
+- **[Project](project/README.md)**  
   Main project with data analysis:
   - `project.ipynb` – analysis notebook
   - `merge_stations.py` – preprocessing script
