@@ -42,7 +42,7 @@ A cleaned dataset has: year,month,wdsp,station
 wdsp = mean wind speed for that month 
 station = location
 
-###   For wind power estimation, we need to consider:
+###    For wind power estimation, we need to consider:
 Mean wind speed → baseline power potential.
 Operational range of wind turbines → usually turbines only operate between a cut-in and cut-out speed.
 Variability → min, max, or standard deviation of wind speeds.
