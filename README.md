@@ -11,7 +11,8 @@ This repository contains assignments and project work completed as part of the P
   - `project.ipynb` – analysis notebook
   - `merge_stations.py` – preprocessing script
   - `data/` – CSV files used for visualizations and outputs
-
+  - `forecast_wind_speed_2026_2035.csv` – CSV file with the 10-year wind speed forecast for all stations
+  
 - **Other files**  
   - `.gitignore`
   - `requirements.txt` – Python dependencies
