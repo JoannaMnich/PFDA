@@ -57,11 +57,23 @@ This table shows the mean, minimum, and maximum wind speeds at each station. Win
 ### Monthly average wind speed plot for each station
 The monthly wind speed values represent the mean of all observations for a given month across approximately 20 years, providing a long-term seasonal wind pattern for each station.
 
-### Trend Analysis for a wind speeds in the next 10 years
-The plots show the mean annual wind speed for each station over 20 years. Flat lines indicate stable wind conditions, suggesting similar wind speeds can be expected in the next 10 years. Small fluctuations are natural variability and do not indicate long-term changes.
+### Annual wind speed trends 2005-2025
+Annual mean wind speeds were calculated for each weather station using cleaned observational data from 2005 to 2025. Any aggregated master rows were removed to ensure only individual station data were included.
+For each station, a linear regression was applied to the annual mean wind speed values to quantify long-term trends. The slope of the regression line indicates whether wind speeds are increasing or decreasing over time.
+The results are visualised as time series plots for each station, showing annual mean values alongside the corresponding regression slope. This allows for comparison of trends between stations and provides insight into long-term changes in wind behaviour.
 
-####   Interpretation of Results:
-The mean annual wind speed for each station from 2005–2025 shows stable conditions with slopes near zero. This indicates no significant trend, suggesting that wind patterns are consistent and can be expected to remain similar over the next 10 years. Small year-to-year variations reflect natural seasonal variability, not long-term changes.
+### Machine Learning Approach: Linear Regression (Scikit-learn)
+The linear regression model achieved an RMSE of approximately 2.5, indicating
+a moderate prediction error. The negative R² value suggests that annual mean
+wind speed is not strongly explained by a simple linear relationship with time,
+which is expected for climatic data influenced by multiple factors.
+- Suggested Model Improvement:
+A potential improvement to the regression model would be to use monthly data
+instead of annual averages. Wind speed is known to exhibit strong seasonal
+patterns, and aggregating the data to yearly means may remove important
+variability. Using monthly observations would allow the model to capture both
+long-term trends and seasonal effects, potentially improving predictive
+performance and model interpretability.
 
 ### Monthly Seasonal Wind Pattern and Variability per Station
 This block calculates the average wind speed per month for each station over the 20-year period.
@@ -70,21 +82,32 @@ The results can help identify seasonal patterns and assess the stability of wind
 If the standard deviation is small and the annual trend is stable → future years will likely be similar
 If the standard deviation is large or the trend is variable → risk must be considered in wind energy planning
 
-## Other Weather Metrics Worth Analyzing
-While this project focuses on wind speed for evaluating wind energy potential, it is also valuable to consider other weather variables that could influence wind patterns and, consequently, wind power production. Metrics such as temperature, rainfall, or atmospheric pressure may have correlations with wind speed.
-
-Analyzing these relationships can help identify conditions under which wind speed is higher or lower, and improve predictions of energy output for wind farms. For example, computing correlations between wind speed and temperature or precipitation could reveal seasonal or meteorological patterns that affect turbine performance. Understanding these interactions allows for more accurate forecasting and planning for wind energy generation.
-
 ## Power output next week (forecast)
 A 7-day wind speed forecast was estimated for four representative stations in Ireland (Dublin Airport, Malin Head, Roches Point, and Belmullet). The forecast is based on historical monthly average wind speeds for the current month. Predicted wind speeds are converted into estimated power output using a simple linear relation P=k×V, where k is a constant representing turbine size and efficiency. This provides a short-term projection of wind conditions and potential energy generation.
 
 Wind speed and estimated power output are plotted on separate axes due to their different scales. While wind speed varies moderately over the week, the estimated power output shows larger fluctuations due to its cubic dependence on wind speed.
 
+## Trend Analysis for a wind speeds in the next 10 years
+he 10-year wind speed forecast is based on annual mean wind speed values.
+Monthly forecasting was considered; however, the annual aggregation process removes the monthly variable, making seasonal modelling impossible at this stage.
+A monthly forecast would require the use of non-aggregated monthly data and would allow the model to capture seasonal variability in wind patterns.
+A linear regression model was trained separately for each weather station using annual mean wind speed data.
+The model was then used to forecast wind speed trends for the period 2026–2035.
+Annual aggregation was selected to analyse long-term trends, while seasonal variability is discussed as a potential extension using monthly data.
+Most stations show stable trends, while a few indicate a slight increase/decrease
+
 ## Future work
 What anything else I can think of?
 
-Consider forecasting future wind speeds using time series models, which could help predict wind trends for the next year or season.
-Develop a script to automate report generation for new data, making it easier to update analyses without manual work.
+1. This study is based on annual mean wind speed data, which allows long-term trend analysis but does not capture seasonal variability. Additionally, the use of a simple linear regression model may not fully reflect complex or non-linear wind patterns.
+Future work could involve using monthly data to model seasonality and applying more advanced machine learning techniques to improve forecasting accuracy.
+
+2. Develop a script to automate report generation for new data, making it easier to update analyses without manual work.
+
+## Other Weather Metrics Worth Analyzing
+While this project focuses on wind speed for evaluating wind energy potential, it is also valuable to consider other weather variables that could influence wind patterns and, consequently, wind power production. Metrics such as temperature, rainfall, or atmospheric pressure may have correlations with wind speed.
+
+Analyzing these relationships can help identify conditions under which wind speed is higher or lower, and improve predictions of energy output for wind farms. For example, computing correlations between wind speed and temperature or precipitation could reveal seasonal or meteorological patterns that affect turbine performance. Understanding these interactions allows for more accurate forecasting and planning for wind energy generation.
 
 # Conclusion 
 
