@@ -121,16 +121,28 @@ Wind speeds peak during winter months (December–February) and are lowest durin
 
 This project used a range of official Python libraries and publicly available data sources to support data cleaning, analysis, visualization, and forecasting. Each library was applied in specific sections of the project as follows:
 
-- Pandas – used in all notebooks (project.ipynb, assignment*.ipynb) and scripts (merge_stations.py) for loading CSV files, cleaning data, filtering by station, aggregating annual and monthly statistics, and preparing datasets for analysis.
+- Pandas – used in project.ipynb, and scripts (merge_stations.py) for loading CSV files, cleaning data, filtering by station, aggregating annual and monthly statistics, and preparing datasets for analysis.
 
 - NumPy – used for numerical operations, array handling, and supporting calculations in statistical analyses and forecasting.
 
-- Matplotlib – used for visualizing trends and patterns, including annual wind speed trends, monthly averages, and comparative plots between stations.
+- Matplotlib – used to visualize trends and patterns, including monthly wind speed plots, annual wind speed trends, seasonal variability with standard deviation, and power output forecasts. Dual-axis plots were used for combined wind speed and power visualization.
 
 - SciPy (scipy.stats.linregress) – applied in the Annual Wind Speed Trends (2005–2025) section to calculate regression slopes, quantify long-term trends, and display linear trends per station.
 
 - Scikit-learn – used in the Trend Analysis for Wind Speeds in the Next 10 Years section to train linear regression models and forecast future wind speeds for each station.
 
+- Datetime – used to handle dates for short-term (7-day) forecasts.
+
 - Jupyter Notebook – provided the interactive environment for combining code, outputs, visualizations, and written analysis, supporting reproducible workflows.
 
 - Met Éireann Public Datasets – source of historical wind speed data for Irish weather stations, processed and merged for analysis in this project.
+
+Each library is used in context within the notebook:
+
+Pandas is central to all data manipulation, from preprocessing to creating forecast DataFrames.
+
+Matplotlib and SciPy are mainly applied in visualization and trend analysis sections.
+
+Scikit-learn and NumPy are used in forecasting and evaluation sections.
+
+Datetime supports the short-term power output forecast.
