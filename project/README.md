@@ -111,11 +111,9 @@ Analyzing these relationships can help identify conditions under which wind spee
 
 # Conclusion 
 
-The results show that wind conditions are consistent and reliable across the analysed stations. Wind energy potential depends mainly on repeating seasonal patterns, not on individual years.
+The results show that wind conditions are consistent and reliable across the analysed stations. Wind energy potential depends mainly on repeating seasonal patterns rather than individual years. Similar wind speeds observed in the same months over a 20-year period indicate a stable wind resource. Low variability suggests low risk for long-term wind energy production, making these locations suitable for wind farm development. Northern stations, such as Malin Head, exhibit higher mean wind speeds compared to inland locations, reflecting Ireland’s maritime climate, while Mullingar shows the lowest average wind speed. Wind speeds peak during winter months (December–February) and are lowest in summer, consistent with increased Atlantic storm activity in winter.
 
-Similar wind speeds observed in the same months over a 20-year period indicate a stable wind resource. Low variability suggests low risk for long-term wind energy production, making these locations suitable for wind farm development.
-North station such as  Malin Head exhibit higher mean wind speeds compared to inland locations, reflecting Ireland’s maritime climate. The lower mean wind speed is in Mullingar.
-Wind speeds peak during winter months (December–February) and are lowest during summer, consistent with increased Atlantic storm activity in winter.
+Forecasting using linear regression indicates that annual wind speeds are expected to remain stable over the next decade, supporting reliable power generation. Short-term forecasts of wind speed and estimated power output further demonstrate the potential energy yield in the coming week, providing useful information for operational planning.
 
 # Use of Resources
 
