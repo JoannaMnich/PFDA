@@ -116,3 +116,21 @@ The results show that wind conditions are consistent and reliable across the ana
 Similar wind speeds observed in the same months over a 20-year period indicate a stable wind resource. Low variability suggests low risk for long-term wind energy production, making these locations suitable for wind farm development.
 North station such as  Malin Head exhibit higher mean wind speeds compared to inland locations, reflecting Ireland’s maritime climate. The lower mean wind speed is in Mullingar.
 Wind speeds peak during winter months (December–February) and are lowest during summer, consistent with increased Atlantic storm activity in winter.
+
+# Use of Resources
+
+This project used a range of official Python libraries and publicly available data sources to support data cleaning, analysis, visualization, and forecasting. Each library was applied in specific sections of the project as follows:
+
+- Pandas – used in all notebooks (project.ipynb, assignment*.ipynb) and scripts (merge_stations.py) for loading CSV files, cleaning data, filtering by station, aggregating annual and monthly statistics, and preparing datasets for analysis.
+
+- NumPy – used for numerical operations, array handling, and supporting calculations in statistical analyses and forecasting.
+
+- Matplotlib – used for visualizing trends and patterns, including annual wind speed trends, monthly averages, and comparative plots between stations.
+
+- SciPy (scipy.stats.linregress) – applied in the Annual Wind Speed Trends (2005–2025) section to calculate regression slopes, quantify long-term trends, and display linear trends per station.
+
+- Scikit-learn – used in the Trend Analysis for Wind Speeds in the Next 10 Years section to train linear regression models and forecast future wind speeds for each station.
+
+- Jupyter Notebook – provided the interactive environment for combining code, outputs, visualizations, and written analysis, supporting reproducible workflows.
+
+- Met Éireann Public Datasets – source of historical wind speed data for Irish weather stations, processed and merged for analysis in this project.
