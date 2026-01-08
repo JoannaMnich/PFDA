@@ -42,7 +42,7 @@ A cleaned dataset has: year,month,wdsp,station
 wdsp = mean wind speed for that month 
 station = location
 
-###    For wind power estimation, we need to consider:
+###  For wind power estimation, we need to consider:
 Mean wind speed → baseline power potential.
 Operational range of wind turbines → usually turbines only operate between a cut-in and cut-out speed.
 Variability → min, max, or standard deviation of wind speeds.
@@ -81,10 +81,10 @@ It also computes the standard deviation per month to show the variability of win
 The results can help identify seasonal patterns and assess the stability of wind resources, which is important for wind energy planning.
 If the standard deviation is small and the annual trend is stable → future years will likely be similar
 If the standard deviation is large or the trend is variable → risk must be considered in wind energy planning
+A random variability of ±1 m/s is added to represent natural short-term fluctuations in wind conditions.
 
 ## Power output next week (forecast)
 A 7-day wind speed forecast was estimated for four representative stations in Ireland (Dublin Airport, Malin Head, Roches Point, and Belmullet). The forecast is based on historical monthly average wind speeds for the current month. Predicted wind speeds are converted into estimated power output using a simple linear relation P=k×V, where k is a constant representing turbine size and efficiency. This provides a short-term projection of wind conditions and potential energy generation.
-
 Wind speed and estimated power output are plotted on separate axes due to their different scales. While wind speed varies moderately over the week, the estimated power output shows larger fluctuations due to its cubic dependence on wind speed.
 
 ## Trend Analysis for a wind speeds in the next 10 years
